@@ -10,7 +10,7 @@ Project developed for a hackathon made by students in which the theme was "Finan
 
 <h3>The homepage of the website is named "index.html". I will explain briefly the project in the following paragraphs.</h3>
 
-I named my education company as <i>G15 financial</i> because I believe it is a strong and appealing name.
+I named my educational company as <i>G15 financial</i> because I believe it is a strong and appealing name.
 
 <h1>Homepage</h1>
 
