@@ -1,0 +1,1152 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: white;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-top: -55px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 10px 10px;
+    padding: 20px 20px;
+
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 19pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 70px 70px 70px 0px;
+}
+
+
+nav a:hover {
+    color: gold;
+}
+
+/* Carrossel */
+
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 25px;
+
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 20%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/* Página Inicial - Calculadora */
+
+.papert {
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+
+}
+
+#tool-sec {
+    margin-top: -60px;
+}
+
+
+.seta {
+    margin-top: 55px;
+}
+
+.calculadora {
+    margin-top: 3%;
+
+}
+
+.calculadora img {
+    width: 500px;
+}
+
+button {
+    position: absolute;
+    color: red;
+    font-size: 100pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    border-width: 0pt;
+    border-radius: 12pt;
+    margin-top: 37.6%;
+    margin-left: -22px;
+    width: 110px;
+    height: 107px;
+    cursor: pointer;
+
+}
+
+button p {
+    margin-top: -20px;
+}
+
+button:hover {
+    background-color: gold;
+}
+
+button:focus,
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 0 black;
+}
+
+/* Footer */
+
+
+.paperb {
+    width: 100%;
+    height: 320px;
+    background-repeat: no-repeat;
+}
+
+.foot-conta a {
+    margin: 70px 70px 70px 0px;
+}
+
+.logob {
+    margin-top: -105px;
+    margin-left: 45px;
+}
+
+.grupo {
+    margin-top: -55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    margin-left: 500px;
+}
+
+.contato {
+    margin-top: -190px;
+    margin-left: 1000px;
+}
+
+.copyr {
+    margin-left: 150px;
+    margin-top: 50px;
+    color: white;
+}
+
+
+
+/* Página calculadora */
+
+.calctop {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+#calc2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+
+
+}
+
+#calc-text2 {
+    color: gold;
+    margin-bottom: 60px;
+}
+
+.calc-norm {
+    border: solid;
+    border-width: 1px;
+    border-color: blue;
+    border-radius: 7pt;
+    border-width: 5px;
+    border-style: outset;
+    background-color: darkblue;
+    width: 140px;
+    height: 60px;
+    margin-left: 35%;
+
+}
+
+.calc-norm:hover {
+    background-color: #ff4545;
+}
+
+.calc-norm a:hover {
+    color: gold;
+}
+
+.calc-norm:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 0 gray;
+}
+
+.calc-norm a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 5px;
+    font-size: 16pt;
+    margin-top: 5px;
+}
+
+.calc-norm2 {
+    border: solid;
+    border-width: 1px;
+    border-color: green;
+    border-radius: 7pt;
+    border-width: 5px;
+    border-style: outset;
+    background-color: darkgreen;
+    width: 140px;
+    height: 60px;
+    margin-left: 55%;
+    margin-top: -67px;
+}
+
+.calc-norm2 a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    top: 5px;
+    font-size: 16pt;
+    margin-top: 5px;
+}
+
+.calc-norm2 a:hover {
+    color: gold;
+}
+
+.calc-norm2:hover {
+    background-color: #ff4545;
+}
+
+.calc-norm2:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 0 gray;
+}
+
+#visor {
+    background-color: white;
+    text-align: left;
+    border-radius: 7pt;
+    height: 40px;
+    width: 170px;
+    margin-left: -9px;
+}
+
+#calc {
+    margin-left: -9px;
+}
+
+table {
+    margin: 0 auto 0 auto;
+}
+
+form fieldset {
+    margin: 10px auto 10px auto;
+    width: 40%;
+    border: solid black 1px;
+    padding: 3%;
+    margin-bottom: 10px;
+    border-width: 0px;
+}
+
+form input {
+    width: 100%;
+    border: solid #ccc 1px;
+    border-style: outset;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 5pt;
+    cursor: pointer;
+}
+
+form input.num {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-style: outset;
+    border-width: 3pt;
+}
+
+form input:hover {
+    color: red;
+}
+
+form input:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 0 gray;
+}
+
+form input.oper {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #b2b2b2;
+    border-style: outset;
+    border-width: 3pt;
+}
+
+.ilust8 {
+    margin-left: 75%;
+    margin-top: -140px;
+}
+
+/* Modal 1 */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: darkblue;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    margin-top: 250px;
+    margin-left: 15%;
+    height: 310px;
+    width: 240px;
+    border-style: outset;
+    border-color: lightgray;
+    border-radius: 7pt;
+    border-width: 6pt;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.fechar {
+    position: absolute;
+    text-decoration: none;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: white;
+}
+
+/* Modal 2 */
+
+.modal2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: darkgreen;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    margin-top: 90px;
+    margin-left: 45%;
+    height: 600px;
+    width: 650px;
+    border-style: outset;
+    border-color: lightgray;
+    border-radius: 7pt;
+    border-width: 6pt;
+}
+
+.modal2:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal2>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.modal2 input {
+    width: 90%;
+}
+
+form h4,
+h2 {
+    color: gold;
+    text-align: center;
+}
+
+form label {
+    color: white;
+}
+
+.renda {
+    position: relative;
+    align-items: center;
+    left: 145px;
+}
+
+.renda input {
+    width: 30%;
+}
+
+.renda label {
+    position: relative;
+    left: -5px;
+}
+
+.total {
+    position: relative;
+    align-items: center;
+    left: 235px;
+}
+
+.total label {
+    position: relative;
+    left: -15px;
+}
+
+.total input {
+    width: 30%;
+    height: 30px;
+}
+
+
+.despesas table {
+    margin-left: 30px;
+}
+
+
+
+
+/* Página Institucional */
+
+.insttop {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+.nomes {
+    margin-top: -30px;
+}
+
+li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.ilust7 {
+    margin-left: 50%;
+    margin-top: -150px;
+}
+
+/* Página Planilha */
+
+.planilha {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 10px 10px;
+    padding: 10px 20px;
+    margin-top: -40px;
+    margin-left: 80px;
+}
+
+.planilha b {
+    color: gold;
+}
+
+.planilha h1,
+a {
+    margin-top: 120px;
+}
+
+.planilha a {
+    text-decoration: none;
+    font-size: 14pt;
+    color: white;
+    margin-left: -7px;
+}
+
+.planilha a:hover {
+    color: gold;
+}
+
+.planilha img {
+    margin-top: -40px;
+}
+
+.planilha label {
+    position: relative;
+    font-size: 10pt;
+    left: 125px;
+    font-style: italic;
+}
+
+.seta-pla {
+    position: relative;
+    margin-left: 114%;
+    bottom: 23px;
+}
+
+.ilust3 {
+    position: relative;
+    margin-left: 73%;
+    margin-top: -190px;
+
+}
+
+.excel-icon {
+    position: relative;
+    top: 7px;
+}
+
+.planZoom {
+    transition: transform .4s;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 6px 10px 0 rgb(244, 248, 14), 0 10px 25px 0 rgba(240, 216, 7, 0.863);
+
+}
+
+.planZoom:hover {
+    transform: scale(2);
+    margin-left: 240px;
+    margin-top: -120px;
+}
+
+/* Página Educação */
+
+.cards img {
+    position: relative;
+    width: 300px;
+    margin: 10px 90px 90px 8px;
+    box-shadow: 0 6px 10px 0 rgb(244, 248, 14), 0 10px 25px 0 rgba(240, 216, 7, 0.863);
+    border-radius: 45pt;
+    transition: transform .4s;
+}
+
+.cards img:hover {
+    transform: scale(1.5);
+}
+
+.ilust6 {
+    float: right;
+    margin-right: 20px;
+}
+
+.educ1 a {
+    position: relative;
+    text-decoration: none;
+    color: gold;
+    font-size: 20pt;
+    top: 80px;
+    left: 650px;
+}
+
+.educ1 a:hover {
+    color: white;
+}
+
+.icones-educ {
+    position: relative;
+    top: 20px;
+}
+
+/* Carrossel 2 */
+
+
+.carousel2 {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 25px;
+
+}
+
+.carousel2-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel2-open:checked+.carousel2-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel2-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+
+.carousel2-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 45px;
+    line-height: 35px;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel2-control.prev {
+    left: 2%;
+}
+
+.carousel2-control.next {
+    right: 2%;
+}
+
+.carousel2-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel2-1:checked~.control-1,
+#carousel2-2:checked~.control-2,
+#carousel2-3:checked~.control-3,
+#carousel2-4:checked~.control-4,
+#carousel2-5:checked~.control-5 {
+    display: block;
+}
+
+.carousel2-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel2-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel2-bullet {
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel2-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel2-1:checked~.control-1~.carousel2-indicators li:nth-child(1) .carousel2-bullet,
+#carousel2-2:checked~.control-2~.carousel2-indicators li:nth-child(2) .carousel-bullet,
+#carousel2-3:checked~.control-3~.carousel2-indicators li:nth-child(3) .carousel-bullet,
+#carousel2-4:checked~.control-4~.carousel2-indicators li:nth-child(4) .carousel-bullet,
+#carousel2-5:checked~.control-5~.carousel2-indicators li:nth-child(5) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* Página Institucional */
+    header a {
+        font-size: 12pt;
+    }
+
+
+    .ilust7 {
+        width: 400px;
+        margin-left: 45%;
+        margin-top: -150px;
+    }
+
+    .educ-finan {
+        font-size: 18pt;
+        margin-left: -185px;
+    }
+
+    /* Página Missão */
+
+    .nomes2 h3 {
+        font-size: 12pt;
+    }
+
+    /* Página Planilha */
+
+    .planilha {
+
+        margin-left: 40px;
+    }
+
+    .planilha h1,
+    a {
+        margin-top: 120px;
+    }
+
+    .planilha h1 {
+        font-size: 14pt;
+        margin-left: 29px;
+    }
+
+    .planilha h3 {
+        text-align: center;
+    }
+
+    .planilha img {
+        margin-top: -20px;
+        width: 450px;
+    }
+
+    .planilha label {
+        left: -05px;
+
+    }
+
+    .seta-pla {
+        width: 30px;
+        display: none;
+    }
+
+    .ilust3 {
+        width: 250px;
+        margin-top: -230px;
+
+    }
+
+    .excelfix img {
+        width: 50px;
+    }
+
+    .planZoom:hover {
+        transform: scale(1.5);
+    }
+
+    /* Página Calculadora */
+
+    .ilust8 {
+        width: 200px;
+    }
+
+    .modal {
+        position: relative;
+        margin-top: -540px;
+    }
+
+    .modal2 {
+        position: relative;
+        width: 500px;
+        margin-left: 85px;
+        margin-top: -490px;
+    }
+
+    .logo-calc {
+        display: none;
+    }
+
+    /* Página Educação */
+    .cards img {
+        width: 250px;
+        margin: 10px 60px 60px 8px;
+    }
+
+    .educ1 p {
+        margin-left: -490px;
+    }
+
+    /* Página Inicial */
+
+    .grupo {
+        position: relative;
+        left: -90px;
+    }
+
+    .copyr {
+        position: relative;
+        left: -290px;
+    }
+
+    .contato a {
+        display: none;
+    }
+
+    .contato p,
+    h4 {
+        display: none;
+    }
+
+    .whatshome {
+        display: none;
+    }
+
+    #tool-sec button {
+        margin-top: 555px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Página Institucional */
+    header a {
+        font-size: 12pt;
+        margin-left: -48px;
+    }
+
+
+    .ilust7 {
+        width: 300px;
+        margin-left: 40%;
+        margin-top: -150px;
+    }
+
+    .insttop h2,
+    h3,
+    ul {
+        margin-left: -100px;
+    }
+
+    .educ-finan {
+        font-size: 14pt;
+        margin-left: -185px;
+    }
+
+    .texto-missao {
+        overflow-wrap: break-word;
+
+    }
+
+
+    /* Página Missão */
+
+    .texto-missao {
+        font-size: 9pt;
+        overflow-wrap: break-word;
+        margin-left: 10px;
+    }
+
+    /* Página Planilha */
+
+    .planilha {
+
+        margin-left: 30px;
+    }
+
+    .planilha h1,
+    a {
+        margin-top: 120px;
+    }
+
+    .planilha h1,
+    h3 {
+        font-size: 12pt;
+        margin-left: 35px;
+    }
+
+    .planilha h3 {
+        text-align: center;
+        font-size: 12pt;
+        margin-left: 20px;
+    }
+
+    .planilha img {
+        margin-top: -20px;
+        width: 450px;
+    }
+
+    .planilha label {
+        display: none;
+
+    }
+
+    .seta-pla {
+        width: 30px;
+        display: none;
+    }
+
+    .ilust3 {
+        width: 250px;
+        margin-top: -230px;
+        display: none;
+
+    }
+
+    .excelfix img {
+        width: 50px;
+        margin-left: 60px;
+    }
+
+    .excelfix a {
+        position: relative;
+        text-align: center;
+    }
+
+    .planZoom:hover {
+        display: none;
+    }
+
+    /* Página Calculadora */
+
+    #calc2 p {
+        font-size: 10pt;
+        margin-left: -140px;
+    }
+
+    #calc2 img {
+        margin-left: 450px;
+        width: 150px;
+    }
+
+    #calc2 h2,
+    h3 {
+        margin-left: -10px;
+    }
+
+    .calc-norm {
+        width: 90px;
+    }
+
+    .calc-norm a {
+        font-size: 12pt;
+    }
+
+    .calc-norm2 {
+        width: 90px;
+    }
+
+    .calc-norm2 a {
+        font-size: 12pt;
+    }
+
+    /* Página Educação */
+
+    .cards img {
+        width: 150px;
+        margin: 10px 60px 60px 10px;
+    }
+
+    .objetivo {
+        font-size: 15pt;
+    }
+
+    .ilust6 {
+        width: 400px;
+    }
+
+    .videos h3 {
+        font-size: 10pt;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .carousel2 iframe {
+        width: 600px;
+    }
+
+    .boaSorte {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .educ1 h3,
+    b {
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+    /* Página Inicial */
+
+    .grupo {
+        position: relative;
+        left: -220px;
+        top: -30px;
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    #tool-sec button {
+        margin-top: 545px;
+    }
+
+}
