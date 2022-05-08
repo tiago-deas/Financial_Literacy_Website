@@ -1149,4 +1149,152 @@ a {
         margin-top: 545px;
     }
 
+    @media screen and (max-width: 300px) {
+
+        /* Página Inicial */
+
+        .calculadora img {
+            width: 200px;
+        }
+
+        .grupo {
+            display: none;
+        }
+
+        header img {
+            position: relative;
+            width: 50px;
+            top: -30px;
+        }
+
+        header a {
+            font-size: 5pt;
+            margin-left: -20px;
+            margin-right: -50px;
+
+        }
+
+        #tool-sec button {
+            width: 50px;
+            height: 45px;
+            margin-top: 334px;
+            margin-left: -38px;
+        }
+
+        #tool-sec p {
+            font-size: 30pt;
+            margin-top: 2px;
+        }
+
+        /* Página Educacional */
+
+        .ilust9 {
+            width: 120px;
+        }
+
+        .carousel2 iframe {
+            width: 400px;
+            height: 200px;
+        }
+
+        .educ1 p {
+            margin-left: -620px;
+
+        }
+
+        .ilust6 {
+            width: 90px;
+            margin-top: 70px;
+
+        }
+
+        .cards img {
+            width: 100px;
+            border-radius: 20pt;
+            margin: -1px -1px -1px -1px;
+        }
+
+        .cards:hover {
+            position: relative;
+            transform: scale(2);
+            z-index: 1;
+        }
+
+        /* Página Planilha */
+
+        .planZoom {
+            display: none;
+        }
+
+        .planilha h3 {
+            font-size: 12pt;
+            margin-left: -40px;
+        }
+
+        .planilha h1 {
+            display: none;
+        }
+
+        .planilha a {
+            margin-left: -120px;
+        }
+
+        /* Página Calculadora */
+
+        .ilust8 {
+            display: none;
+        }
+
+        .calc-norm {
+            width: 90px;
+            height: 40px;
+            margin-left: 2px;
+        }
+
+        .calc-norm2 {
+            width: 90px;
+            height: 40px;
+            margin-left: 130px;
+        }
+
+        .resultado p {
+            font-size: 12pt;
+            overflow-wrap: break-word;
+            margin-left: 80px;
+
+        }
+
+        .modal2 {
+            margin-left: -10px;
+            width: 290px;
+        }
+
+        .modal2 input {
+            width: 30%;
+        }
+
+        .total {
+            margin-left: -190px;
+        }
+
+        .renda {
+            margin-left: -120px;
+        }
+
+        /* Página Missão */
+
+        .ilust5 {
+            width: 150px;
+        }
+
+        /* Página Institucional */
+
+        .ilust7 {
+            display: none;
+        }
+
+        .nomes h3 {
+            margin-left: -140px;
+        }
+    }
 }
