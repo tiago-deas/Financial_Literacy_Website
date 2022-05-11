@@ -1,10 +1,17 @@
 # Financial_Literacy_Website
-Project developed for a hackathon made by students in which the theme was "Financial Literacy". I created a website for people to start getting familiarized with some nuances of personal finance. On my website, I added a spreadsheet and two different calculators, along with educative content, to people start managing their own financial life and get away from any budget issues.
+Project developed for the <i>Pré-Startse hackathon</i> made by students in which the theme was "Financial Literacy". I created a website for people to start getting familiarized with some nuances of personal finance. On my website, I added a spreadsheet and two different calculators, along with educative content, to people start managing their own financial life and get away from any budget issues.
 
 - HTML5;
 - CSS3;
 - JavaScript;
 - Figma.
+
+The project was awarded <b>1st Place</b> in the <b>Best Solution Category</b> which is the most important one from the <a href="https://prestartse.netlify.app/">Pré-StartSe Hackathon</a>.
+
+
+<p align="center"><img src = "https://thumbs.gfycat.com/SpryGrotesqueIvorybilledwoodpecker.webp" width="150px"/></p>
+
+<p align="center"><a href= "https://prestartse.netlify.app/"><img src="https://i.imgur.com/uwgGDVl.jpg" width="700px"/></a></p>
 
 <h1>👇</h1>
 
